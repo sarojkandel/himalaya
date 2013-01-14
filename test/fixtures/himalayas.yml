@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  email: MyString
+  reserva: 2012-12-29
+  personas: MyString
+  hora: MyString
+
+two:
+  name: MyString
+  email: MyString
+  reserva: 2012-12-29
+  personas: MyString
+  hora: MyString

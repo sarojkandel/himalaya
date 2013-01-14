@@ -1,0 +1,43 @@
+<%= form_for(@himalaya) do |f| %>
+  <% if @himalaya.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@himalaya.errors.count, "error") %> prohibited this himalaya from being saved:</h2>
+
+      <ul>
+      <% @himalaya.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :email %><br />
+    <%= f.text_field :email %>
+  </div>
+  
+  <div class="field">
+    <%= f.label :personas %><br />
+   <%=f.select :personas,[ 
+           ["1","1" ],  ["2", "2"], ["3", "3"], ["4", "4"], ["5", "5"], ["6", "6"], ["7", "7"],  ["8", "8"], ["9", "9"], ["10", "10"],["11", "11"], ["12", "12"]#, ["22:30", "22:30"],["23:00", "23:00"],["23:30", "23:30"], ["24:00", "24:00"]
+      ]%>
+  </div>
+  <div class="field">
+    <%= f.label :hora %><br />
+     <%=f.select :hora,[ 
+        ["select","" ],   ["1:00","1:00" ],  ["1:30", "1:30"], ["2:00", "2:00"], ["2:30", "2:30"], ["3:00", "3:00"], ["3:30", "3:30"], ["4:00", "4:00"],  ["20:00", "20:00"], ["20:30", "20:30"], ["21:00", "21:00"],["21:30", "21:30"], ["22:00", "22:00"], ["22:30", "22:30"],["23:00", "23:00"],["23:30", "23:30"]#, ["24:00", "24:00"]
+      ]%>
+  </div>
+  <div class="field">
+    <%= f.label :reserva %><br />
+    <%= f.text_field :reserva  %>
+ 
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @himalaya.name %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%= @himalaya.email %>
+</p>
+
+<p>
+  <b>Reserva:</b>
+  <%= @himalaya.reserva %>
+</p>
+
+<p>
+  <b>Personas:</b>
+  <%= @himalaya.personas %>
+</p>
+
+<p>
+  <b>Hora:</b>
+  <%= @himalaya.hora %>
+</p>
+
+
+<%= link_to 'Edit', edit_himalaya_path(@himalaya) %> |
+<%= link_to 'Back', himalayas_path %>
